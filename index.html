@@ -46,6 +46,8 @@
             }
             this.physics.add.collider(stars, platforms);
             this.physics.add.collider(stars, stars);
+
+            platforms.create(400, 568, 'ground').setScale(2).refreshBody();
         }
         function update() {
         }
